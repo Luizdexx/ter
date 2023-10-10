@@ -130,15 +130,43 @@
             border-color: transparent;
             color: white;
         }
-        @media (max-width: 768px) {
-    /* Estilos para telas menores */
+       @media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
     #header {
-        padding-right: 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .navbar {
+        display: block;
+        margin-top: 10px;
     }
 
     .list {
         width: 100%;
         margin-top: 20px;
+    }
+
+    .list h2 {
+        font-size: 24px;
+    }
+
+    .list a {
+        font-size: 18px;
+    }
+
+    .list img {
+        width: 40px;
+        height: 40px;
     }
 }
 
